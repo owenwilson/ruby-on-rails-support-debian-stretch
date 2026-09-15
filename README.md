@@ -82,6 +82,16 @@ apt install -y \
 docker pull debian:stretch
 ```
 
+- build docker image
+
+```sh
+docker build \
+    -f ./debian-stretch-ruby-on-rails.Dockerfile \
+    -t ruby:2.3.8 \
+    --progress=plain \
+    .
+```
+
 ## references
 
 - check out [debian archive](https://www.debian.org/distrib/archive)
